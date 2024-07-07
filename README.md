@@ -1,4 +1,4 @@
-# recipi_app
+# e-commerce-app
 
 A new Flutter project.
 
@@ -16,4 +16,4 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 # e-commerce-app
 # e-commerce-app
-# recipi_app
+

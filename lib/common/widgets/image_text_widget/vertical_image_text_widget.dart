@@ -36,13 +36,13 @@ class TVerticalImageText extends StatelessWidget {
                 padding: EdgeInsets.all(TSizes.sm),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(100),
-                  color: backgroundColor?? (dark? TColors.black:TColors.white),
+                  color: backgroundColor?? (dark? TColors.white:TColors.black),
                 ),
                 child: Center(
                   child: Image(
                     image: AssetImage(image,),
                     fit: BoxFit.cover,
-                    color: THelperFunction.isDarkMode(context)? TColors.light:TColors.dark,
+                    color: dark? TColors.light:TColors.dark,
                   ),
 
                 )),
