@@ -28,7 +28,7 @@ class TBrandCard extends StatelessWidget {
       onTap: onTap,
       ///--Container Design
       child: TRoundedContainer(
-        padding: EdgeInsets.all(TSizes.sm),
+        padding: const EdgeInsets.all(TSizes.sm),
         showBorder: true,
         backgroundColor: Colors.transparent,
         child: Row(
@@ -44,7 +44,7 @@ class TBrandCard extends StatelessWidget {
                     : TColors.black,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               width: TSizes.spaceBtwItems / 2,
             ),
 
@@ -54,7 +54,7 @@ class TBrandCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  TBrandTitleWithVerticalIcon(
+                  const TBrandTitleWithVerticalIcon(
                     title: "Reymond",
                     brandTextSize: TextSizes.large,
                   ),

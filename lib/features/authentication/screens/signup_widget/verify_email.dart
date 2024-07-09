@@ -17,25 +17,25 @@ class VerifyEmailScreen extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         actions: [
-          IconButton(onPressed: ()=> Get.to(()=>LoginScreen()), icon: Icon(CupertinoIcons.clear))
+          IconButton(onPressed: ()=> Get.to(()=>const LoginScreen()), icon: const Icon(CupertinoIcons.clear))
         ],
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
             children: [
               /// Image
-                Image(image: AssetImage(TImage.deliveredEmailIllustration),width: THelperFunction.screenWidth(),),
+                Image(image: const AssetImage(TImage.deliveredEmailIllustration),width: THelperFunction.screenWidth(),),
 
 
               /// Title and subTitle
               Text(TTexts.confirmEmail, style: Theme.of(context).textTheme.headlineMedium,textAlign: TextAlign.center,),
-              SizedBox(height: TSizes.spaceBtwItems,),
+              const SizedBox(height: TSizes.spaceBtwItems,),
               Text("mirazmehedi065@gmail.com",style: Theme.of(context).textTheme.labelLarge,textAlign: TextAlign.center,),
-              SizedBox(height: TSizes.spaceBtwItems,),
+              const SizedBox(height: TSizes.spaceBtwItems,),
               Text(TTexts.confirmEmailSubTitle,style: Theme.of(context).textTheme.labelMedium, textAlign: TextAlign.center,),
-              SizedBox(height: TSizes.spaceBtwItems,),
+              const SizedBox(height: TSizes.spaceBtwItems,),
 
               /// Button
               SizedBox(width: double.infinity,child: ElevatedButton(
@@ -43,14 +43,14 @@ class VerifyEmailScreen extends StatelessWidget {
                   image: TImage.staticSuccessIllustration,
                   title: TTexts.yourEmailCreatedTitle,
                   subTitle: TTexts.yourEmailCreatedSubTitle,
-                  onPressed: ()=> Get.to(()=>LoginScreen()),
+                  onPressed: ()=> Get.to(()=>const LoginScreen()),
                 )),
-                child: Text(TTexts.tContinue),
+                child: const Text(TTexts.tContinue),
               ),),
-              SizedBox(height: TSizes.spaceBtwItems,),
+              const SizedBox(height: TSizes.spaceBtwItems,),
               SizedBox(width: double.infinity,child: TextButton(onPressed: (){
 
-              },child: Text(TTexts.reSendEmail),
+              },child: const Text(TTexts.reSendEmail),
               ),)
             ],
           ),

@@ -43,6 +43,7 @@ dependencies:
   smooth_page_indicator: ^1.1.0
   carousel_slider: ^4.2.1
 
+
   # icon
   iconsax: ^0.0.8
 
@@ -80,6 +81,8 @@ flutter:
     - assets/images/onboarding_image/
     - assets/images/animation/
     - assets/images/banners/
+    - assets/images/products/
+    - assets/images/user/
   #   - images/a_dot_ham.jpeg
 
   fonts:

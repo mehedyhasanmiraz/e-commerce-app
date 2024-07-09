@@ -9,29 +9,29 @@ class TTextFieldTheme{
     prefixIconColor: Colors.grey,
     suffixIconColor: Colors.grey,
     //constraints: BoxConstraints.expand(height: 14.inputFieldsHeight),
-    labelStyle: TextStyle().copyWith(fontSize: 14,color: Colors.black),
-    hintStyle: TextStyle().copyWith(fontSize: 14,color: Colors.black),
-    errorStyle: TextStyle().copyWith(fontStyle: FontStyle.normal),
-    floatingLabelStyle: TextStyle().copyWith(color: Colors.black.withOpacity(0.8)),
-    border: OutlineInputBorder().copyWith(
+    labelStyle: const TextStyle().copyWith(fontSize: 14,color: Colors.black),
+    hintStyle: const TextStyle().copyWith(fontSize: 14,color: Colors.black),
+    errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal),
+    floatingLabelStyle: const TextStyle().copyWith(color: Colors.black.withOpacity(0.8)),
+    border: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),
-      borderSide: BorderSide(color: Colors.grey,width: 1),
+      borderSide: const BorderSide(color: Colors.grey,width: 1),
     ),
-    enabledBorder: OutlineInputBorder().copyWith(
-      borderSide: BorderSide(color: Colors.grey),
+    enabledBorder: const OutlineInputBorder().copyWith(
+      borderSide: const BorderSide(color: Colors.grey),
       borderRadius: BorderRadius.circular(14),
     ),
-    focusedBorder: OutlineInputBorder().copyWith(
+    focusedBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),
-      borderSide: BorderSide(color: Colors.black12,width: 1)
+      borderSide: const BorderSide(color: Colors.black12,width: 1)
     ),
-    errorBorder: OutlineInputBorder().copyWith(
+    errorBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),
-      borderSide: BorderSide(color: Colors.red,width: 1)
+      borderSide: const BorderSide(color: Colors.red,width: 1)
     ),
-    focusedErrorBorder: OutlineInputBorder().copyWith(
+    focusedErrorBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),
-      borderSide: BorderSide(color: Colors.orange,width: 1)
+      borderSide: const BorderSide(color: Colors.orange,width: 1)
     )
   );
 
@@ -42,29 +42,29 @@ class TTextFieldTheme{
       prefixIconColor: Colors.grey,
       suffixIconColor: Colors.grey,
       //constraints: BoxConstraints.expand(height: 14.inputFieldsHeight),
-      labelStyle: TextStyle().copyWith(fontSize: 14,color: Colors.white),
-      hintStyle: TextStyle().copyWith(fontSize: 14,color: Colors.white),
-      errorStyle: TextStyle().copyWith(fontStyle: FontStyle.normal),
-      floatingLabelStyle: TextStyle().copyWith(color: Colors.white.withOpacity(0.8)),
-      border: OutlineInputBorder().copyWith(
+      labelStyle: const TextStyle().copyWith(fontSize: 14,color: Colors.white),
+      hintStyle: const TextStyle().copyWith(fontSize: 14,color: Colors.white),
+      errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal),
+      floatingLabelStyle: const TextStyle().copyWith(color: Colors.white.withOpacity(0.8)),
+      border: const OutlineInputBorder().copyWith(
         borderRadius: BorderRadius.circular(14),
-        borderSide: BorderSide(color: Colors.grey,width: 1),
+        borderSide: const BorderSide(color: Colors.grey,width: 1),
       ),
-      enabledBorder: OutlineInputBorder().copyWith(
-        borderSide: BorderSide(color: Colors.grey),
+      enabledBorder: const OutlineInputBorder().copyWith(
+        borderSide: const BorderSide(color: Colors.grey),
         borderRadius: BorderRadius.circular(14),
       ),
-      focusedBorder: OutlineInputBorder().copyWith(
+      focusedBorder: const OutlineInputBorder().copyWith(
           borderRadius: BorderRadius.circular(14),
-          borderSide: BorderSide(color: Colors.white12,width: 1)
+          borderSide: const BorderSide(color: Colors.white12,width: 1)
       ),
-      errorBorder: OutlineInputBorder().copyWith(
+      errorBorder: const OutlineInputBorder().copyWith(
           borderRadius: BorderRadius.circular(14),
-          borderSide: BorderSide(color: Colors.red,width: 1)
+          borderSide: const BorderSide(color: Colors.red,width: 1)
       ),
-      focusedErrorBorder: OutlineInputBorder().copyWith(
+      focusedErrorBorder: const OutlineInputBorder().copyWith(
           borderRadius: BorderRadius.circular(14),
-          borderSide: BorderSide(color: Colors.orange,width: 1)
+          borderSide: const BorderSide(color: Colors.orange,width: 1)
       )
   );
 }

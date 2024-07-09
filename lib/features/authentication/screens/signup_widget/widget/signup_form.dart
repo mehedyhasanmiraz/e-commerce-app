@@ -27,72 +27,72 @@ class SignUpForm extends StatelessWidget {
             Expanded(
               child: TextFormField(
                 expands: false,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                     labelText: TTexts.firstName,
                     prefixIcon: Icon(Icons.person_outline)
                 ),
               ),
             ),
-            SizedBox(width: TSizes.spaceBtwInputFields,),
+            const SizedBox(width: TSizes.spaceBtwInputFields,),
             Expanded(child: TextFormField(
               expands: false,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                   labelText: TTexts.lastName,
                   prefixIcon: Icon(Icons.person_outline)
               ),
             )),
           ],
         ),
-        SizedBox(height: TSizes.spaceBtwInputFields,),
+        const SizedBox(height: TSizes.spaceBtwInputFields,),
 
         /// user name
         TextFormField(
           expands: false,
-          decoration: InputDecoration(
+          decoration: const InputDecoration(
               labelText: TTexts.userName,
               prefixIcon: Icon(Icons.person_search_rounded)
           ),
         ),
-        SizedBox(height: TSizes.spaceBtwInputFields,),
+        const SizedBox(height: TSizes.spaceBtwInputFields,),
         /// email
         TextFormField(
           expands: false,
-          decoration: InputDecoration(
+          decoration: const InputDecoration(
               labelText: TTexts.email,
               prefixIcon: Icon(Icons.mark_email_read_outlined)
           ),
         ),
-        SizedBox(height: TSizes.spaceBtwInputFields,),
+        const SizedBox(height: TSizes.spaceBtwInputFields,),
 
         /// phone number
         TextFormField(
           expands: false,
-          decoration: InputDecoration(
+          decoration: const InputDecoration(
               labelText: TTexts.phoneNumber,
               prefixIcon: Icon(Icons.call)
           ),
         ),
-        SizedBox(height: TSizes.spaceBtwInputFields,),
+        const SizedBox(height: TSizes.spaceBtwInputFields,),
 
         /// password
         TextFormField(
           obscureText: true,
-          decoration: InputDecoration(
+          decoration: const InputDecoration(
             labelText: TTexts.password,
             prefixIcon: Icon(Icons.password),
             suffixIcon: Icon(Icons.remove_red_eye_sharp),
           ),
         ),
-        SizedBox(height: TSizes.spaceBtwInputFields,),
+        const SizedBox(height: TSizes.spaceBtwInputFields,),
 
         /// terms and condition checkbox
-        TermsAndConditons(),
-        SizedBox(height: TSizes.spaceBtwItems,),
+        const TermsAndConditons(),
+        const SizedBox(height: TSizes.spaceBtwItems,),
 
         /// signup button
-        SizedBox(width: double.infinity,child: ElevatedButton(onPressed: ()=> Get.to(()=> VerifyEmailScreen())
+        SizedBox(width: double.infinity,child: ElevatedButton(onPressed: ()=> Get.to(()=> const VerifyEmailScreen())
 
-          ,child: Text(TTexts.createAccount),),)
+          ,child: const Text(TTexts.createAccount),),)
       ],
     ));
   }

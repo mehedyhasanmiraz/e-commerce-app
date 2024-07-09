@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../../utils/contants/colors.dart';
-import '../../../utils/contants/image_string.dart';
 import '../../../utils/contants/size.dart';
 import '../../../utils/helpers/helper_function.dart';
 import '../custom_shape/containers/rounded_container.dart';
@@ -21,12 +20,12 @@ class TBrandShowCase extends StatelessWidget {
       showBorder: true,
       backgroundColor: Colors.transparent,
       borderColor: TColors.darkGrey,
-      padding: EdgeInsets.all(TSizes.md),
-      margin: EdgeInsets.only(bottom: TSizes.defaultSpace),
+      padding: const EdgeInsets.all(TSizes.md),
+      margin: const EdgeInsets.only(bottom: TSizes.defaultSpace),
       child: Column(
         children: [
           ///--Brand with product count
-          TBrandCard(showBorder: false),
+          const TBrandCard(showBorder: false),
 
           ///Brand with product image
           Row(
@@ -43,8 +42,8 @@ class TBrandShowCase extends StatelessWidget {
         child: TRoundedContainer(
           height: 100,
           backgroundColor: THelperFunction.isDarkMode(context)? TColors.darkGrey:TColors.light,
-          margin: EdgeInsets.only(right: TSizes.sm),
-          padding: EdgeInsets.all(TSizes.md),
+          margin: const EdgeInsets.only(right: TSizes.sm),
+          padding: const EdgeInsets.all(TSizes.md),
           child: Image(
             image: AssetImage(image),
             fit: BoxFit.contain,

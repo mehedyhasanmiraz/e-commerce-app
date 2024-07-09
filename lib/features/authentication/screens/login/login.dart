@@ -28,14 +28,14 @@ class LoginScreen extends StatelessWidget {
               TLoginHeader(dark: dark,),
 
               /// Form
-              TForm(),
+              const TForm(),
 
               /// Divider
               TFormDivider(dividerText: TTexts.orSignInWith.capitalize!,),
-              SizedBox(height: TSizes.spaceBtwItems,),
+              const SizedBox(height: TSizes.spaceBtwItems,),
 
               /// Footer
-              TSocilaButton()
+              const TSocilaButton()
             ],
           ),
         ),

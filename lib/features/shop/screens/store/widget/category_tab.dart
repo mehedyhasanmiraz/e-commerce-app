@@ -14,33 +14,33 @@ class TCategoryTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       shrinkWrap: true,
-      physics: NeverScrollableScrollPhysics(),
+      physics: const NeverScrollableScrollPhysics(),
       children: [
         Padding(
-          padding: EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
             children: [
               ///--Brands
-              TBrandShowCase(image: [
+              const TBrandShowCase(image: [
                 TImage.productImage3,
                 TImage.productImage2,
                 TImage.productImage1,
 
               ],),
-              TBrandShowCase(image: [
+              const TBrandShowCase(image: [
                 TImage.productImage3,
                 TImage.productImage2,
                 TImage.productImage1,
 
               ],),
-              SizedBox(height: TSizes.spaceBtwItems,),
+              const SizedBox(height: TSizes.spaceBtwItems,),
 
               ///--Products
               TSectionHeading(title: "I might like", showActionButton: true, onPressed: (){},),
-              SizedBox(height: TSizes.spaceBtwItems,),
+              const SizedBox(height: TSizes.spaceBtwItems,),
 
-              TGridLayout(itemCount: 4, itemBuilder: (_,index)=> TProductCardsVertical()),
-              SizedBox(height: TSizes.spaceBtwSections,),
+              TGridLayout(itemCount: 4, itemBuilder: (_,index)=> const TProductCardsVertical()),
+              const SizedBox(height: TSizes.spaceBtwSections,),
             ],
           ),
         ),

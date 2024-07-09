@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 
 
   /// this class contain all the app text in String formats.

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../../utils/contants/colors.dart';
-import '../../../utils/contants/image_string.dart';
 import '../../../utils/contants/size.dart';
 import '../../../utils/helpers/helper_function.dart';
 
@@ -35,10 +34,12 @@ class TCircularImage extends StatelessWidget {
         color: backgroundColor?? (THelperFunction.isDarkMode(context) ? TColors.black : TColors.light),
         borderRadius: BorderRadius.circular(100),
       ),
-      child: Image(
-        image: isNetworkImage? NetworkImage(image):AssetImage(image) as ImageProvider,
-        color: overlayColor,
-        fit: fit,
+      child: Center(
+        child: Image(
+          image: isNetworkImage? NetworkImage(image):AssetImage(image) as ImageProvider,
+          color: overlayColor,
+          fit: fit,
+        ),
       ),
     );
   }

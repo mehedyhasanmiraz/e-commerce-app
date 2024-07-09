@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ecommerce/features/personalization/screens/settings/settings.dart';
 import 'package:flutter_ecommerce/features/shop/screens/home/home.dart';
 import 'package:flutter_ecommerce/features/shop/screens/store/store.dart';
+import 'package:flutter_ecommerce/features/shop/screens/wishlist/wishlist.dart';
 import 'package:flutter_ecommerce/utils/contants/colors.dart';
 import 'package:flutter_ecommerce/utils/helpers/helper_function.dart';
 import 'package:get/get.dart';
@@ -25,7 +27,7 @@ class NavigationMenu extends StatelessWidget {
           onDestinationSelected: (index)=>controller.selectedIndex.value = index,
           backgroundColor: darkMode? TColors.black:TColors.white,
           indicatorColor: darkMode? TColors.white.withOpacity(0.1):TColors.black.withOpacity(0.1),
-          destinations: [
+          destinations: const [
              NavigationDestination(icon: Icon(Iconsax.home), label: "Home"),
              NavigationDestination(icon: Icon(Iconsax.shop), label: "Store"),
              NavigationDestination(icon: Icon(Iconsax.heart), label: "Wishlist"),
@@ -43,9 +45,9 @@ class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
 
   final screens = [
-    HomeScreen(),
-    StoreScreen(),
-    Container(color: Colors.orange,child: Center(child: Text("Wishlist")),),
-    Container(color: Colors.blue,child: Center(child: Text("Profile")),)
+    const HomeScreen(),
+    const StoreScreen(),
+    const FavouriteScreen(),
+    const SettingsScreen()
   ];
 }

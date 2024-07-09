@@ -16,36 +16,36 @@ class ResetPassword extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         actions: [
-          IconButton(onPressed: ()=> Get.back, icon: Icon(CupertinoIcons.clear))
+          IconButton(onPressed: ()=> Get.back, icon: const Icon(CupertinoIcons.clear))
         ],
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               /// Image
-              Image(image: AssetImage(TImage.deliveredEmailIllustration),width: THelperFunction.screenWidth(),),
+              Image(image: const AssetImage(TImage.deliveredEmailIllustration),width: THelperFunction.screenWidth(),),
 
 
               /// Title and subTitle
               Text(TTexts.changePasswordTitle, style: Theme.of(context).textTheme.headlineMedium,textAlign: TextAlign.center,),
-              SizedBox(height: TSizes.spaceBtwItems,),
+              const SizedBox(height: TSizes.spaceBtwItems,),
 
               Text(TTexts.changePasswordSubTitle,style: Theme.of(context).textTheme.labelMedium, textAlign: TextAlign.center,),
-              SizedBox(height: TSizes.spaceBtwItems,),
+              const SizedBox(height: TSizes.spaceBtwItems,),
 
               /// Button
               SizedBox(width: double.infinity,child: ElevatedButton(
-                onPressed: ()=>Get.off(()=>LoginScreen()),
-                child: Text(TTexts.done),
+                onPressed: ()=>Get.off(()=>const LoginScreen()),
+                child: const Text(TTexts.done),
               ),),
-              SizedBox(height: TSizes.spaceBtwItems,),
+              const SizedBox(height: TSizes.spaceBtwItems,),
 
               SizedBox(width: double.infinity,child: TextButton(
                 onPressed: (){},
-                child: Text(TTexts.reSendEmail),
+                child: const Text(TTexts.reSendEmail),
               ),),
 
             ],

@@ -50,7 +50,7 @@ class THelperFunction{
             content: Text(message),
             actions: [
               TextButton(onPressed: ()=> Navigator.of(context).pop(),
-                  child: Text("Ok"))
+                  child: const Text("Ok"))
             ],
           );
         }

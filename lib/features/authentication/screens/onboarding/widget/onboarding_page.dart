@@ -23,7 +23,7 @@ class OnboardingPage extends StatelessWidget {
             height: THelperFunction.screenHeight() * 0.6,
             image: AssetImage(image),
           ),
-          SizedBox(
+          const SizedBox(
             height: TSizes.spaceBtwItems,
           ),
           Text(
@@ -31,7 +31,7 @@ class OnboardingPage extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineMedium,
             textAlign: TextAlign.center,
           ),
-          SizedBox(
+          const SizedBox(
             height: TSizes.spaceBtwItems,
           ),
           Text(

@@ -5,7 +5,6 @@ import 'package:flutter_ecommerce/navigation_menu.dart';
 import 'package:flutter_ecommerce/utils/contants/size.dart';
 import 'package:flutter_ecommerce/utils/contants/text_strings.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class TForm extends StatelessWidget {
   const TForm({
@@ -21,24 +20,24 @@ class TForm extends StatelessWidget {
           child: Column(
             children: [
               /// email
-              TextField(
+              const TextField(
                 decoration: InputDecoration(
                   icon: Icon(Icons.email_outlined),
                   labelText: TTexts.email,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: TSizes.spaceBtwInputFields,
               ),
 
               /// Password
-              TextField(
+              const TextField(
                 decoration: InputDecoration(
                     icon: Icon(Icons.password_sharp),
                     labelText: TTexts.password,
                     suffixIcon: Icon(Icons.remove_red_eye_sharp)),
               ),
-              SizedBox(
+              const SizedBox(
                 height: TSizes.spaceBtwInputFields / 2,
               ),
 
@@ -50,17 +49,17 @@ class TForm extends StatelessWidget {
                   Row(
                     children: [
                       Checkbox(value: true, onChanged: (value) {}),
-                      Text(TTexts.rememberMe),
+                      const Text(TTexts.rememberMe),
                     ],
                   ),
 
                   /// Forget Password
                   TextButton(
-                      onPressed: () => Get.to(()=>ForgetPassword()),
-                      child: Text(TTexts.forgetPassword))
+                      onPressed: () => Get.to(()=>const ForgetPassword()),
+                      child: const Text(TTexts.forgetPassword))
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: TSizes.spaceBtwSections,
               ),
 
@@ -68,11 +67,11 @@ class TForm extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () => Get.off(()=>NavigationMenu()),
-                  child: Text(TTexts.signIn),
+                  onPressed: () => Get.off(()=>const NavigationMenu()),
+                  child: const Text(TTexts.signIn),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: TSizes.spaceBtwItems,
               ),
 
@@ -80,8 +79,8 @@ class TForm extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: OutlinedButton(
-                  onPressed: () => Get.to(()=>SignupScreen()),
-                  child: Text(TTexts.createAccount),
+                  onPressed: () => Get.to(()=>const SignupScreen()),
+                  child: const Text(TTexts.createAccount),
                 ),
               ),
 

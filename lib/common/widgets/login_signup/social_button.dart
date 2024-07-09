@@ -19,14 +19,14 @@ class TSocilaButton extends StatelessWidget {
           ),
           child: IconButton(
             onPressed: (){},
-            icon: Image(
+            icon: const Image(
               width: TSizes.iconMd,
               height: TSizes.iconMd,
               image: AssetImage(TImage.google),
             ),
           ),
         ),
-        SizedBox(width: TSizes.spaceBtwItems,),
+        const SizedBox(width: TSizes.spaceBtwItems,),
         Container(
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(100),
@@ -34,7 +34,7 @@ class TSocilaButton extends StatelessWidget {
           ),
           child: IconButton(
             onPressed: (){},
-            icon: Image(
+            icon: const Image(
               width: TSizes.iconMd,
               height: TSizes.iconMd,
               image: AssetImage(TImage.facebook),

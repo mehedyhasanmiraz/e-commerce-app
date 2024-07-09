@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../../utils/contants/size.dart';
-import '../products/products_cards/products_cards_vertical.dart';
 
 class TGridLayout extends StatelessWidget {
   final int itemCount;
@@ -21,7 +20,7 @@ class TGridLayout extends StatelessWidget {
         itemCount: itemCount,
         shrinkWrap: true,
         padding: EdgeInsets.zero,
-        physics: NeverScrollableScrollPhysics(),
+        physics: const NeverScrollableScrollPhysics(),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           mainAxisSpacing: TSizes.gridViewSpacing,

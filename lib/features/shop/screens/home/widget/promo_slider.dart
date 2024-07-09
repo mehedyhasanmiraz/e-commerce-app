@@ -3,11 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/features/shop/controllers/home_controller.dart';
 import 'package:flutter_ecommerce/utils/contants/colors.dart';
 import 'package:get/get.dart';
-import 'package:get/get_instance/get_instance.dart';
 
 import '../../../../../common/widgets/custom_shape/containers/circular_container.dart';
 import '../../../../../common/widgets/images/t_rounded_images.dart';
-import '../../../../../utils/contants/image_string.dart';
 import '../../../../../utils/contants/size.dart';
 
 class TPromoSlider extends StatelessWidget {
@@ -29,7 +27,7 @@ class TPromoSlider extends StatelessWidget {
           ),
           items: banners.map((url)=> TRoundedImage(imageUrl: url)).toList()
         ),
-        SizedBox(height: TSizes.spaceBtwItems,),
+        const SizedBox(height: TSizes.spaceBtwItems,),
         Center(
           child: Obx(
             ()=> Row(
@@ -39,7 +37,7 @@ class TPromoSlider extends StatelessWidget {
                   TCircularContainer(
                     height: 5,
                     width: 20,
-                    margin: EdgeInsets.only(right: 10),
+                    margin: const EdgeInsets.only(right: 10),
                     backgroundColor: controller.carouselCurrentIndex.value == i? TColors.primary: TColors.grey,
                   )
               ],

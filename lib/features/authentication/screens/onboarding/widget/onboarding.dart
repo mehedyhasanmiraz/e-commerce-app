@@ -4,15 +4,9 @@ import 'package:flutter_ecommerce/features/authentication/screens/onboarding/wid
 import 'package:flutter_ecommerce/features/authentication/screens/onboarding/widget/onboarding_page.dart';
 import 'package:flutter_ecommerce/features/authentication/screens/onboarding/widget/onboarding_skip.dart';
 import 'package:flutter_ecommerce/utils/contants/image_string.dart';
-import 'package:flutter_ecommerce/utils/contants/size.dart';
 import 'package:flutter_ecommerce/utils/contants/text_strings.dart';
-import 'package:flutter_ecommerce/utils/devices/device_utility.dart';
-import 'package:flutter_ecommerce/utils/helpers/helper_function.dart';
 import 'package:get/get.dart';
-import 'package:get/get_instance/get_instance.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import '../../../../../utils/contants/colors.dart';
 import 'onboarding_dots_navigation.dart';
 
 class OnboardingScreen extends StatelessWidget {
@@ -30,7 +24,7 @@ class OnboardingScreen extends StatelessWidget {
           PageView(
             controller: controller.pageController,
             onPageChanged: controller.updatePageIndicator,
-            children: [
+            children: const [
               OnboardingPage(
                 image: TImage.onBoardingImage1,
                 title: TTexts.onBoardingTitle1,
@@ -50,13 +44,13 @@ class OnboardingScreen extends StatelessWidget {
           ),
 
           /// skip button
-          OnBoardingSkip(),
+          const OnBoardingSkip(),
 
           /// Dot navigation smooth page indicator
-          OnBoardingDotsNavigation(),
+          const OnBoardingDotsNavigation(),
 
           /// Circular button
-          OnBoardingNextButton()
+          const OnBoardingNextButton()
         ],
       ),
     );

@@ -1,19 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/common/widgets/appBar/app_bar.dart';
 import 'package:flutter_ecommerce/common/widgets/appBar/tab_bar.dart';
-import 'package:flutter_ecommerce/common/widgets/custom_shape/containers/rounded_container.dart';
 import 'package:flutter_ecommerce/common/widgets/custom_shape/containers/search_container.dart';
 import 'package:flutter_ecommerce/common/widgets/layout/grid_layout.dart';
 import 'package:flutter_ecommerce/common/widgets/product_carts/cart_menu_icon.dart';
-import 'package:flutter_ecommerce/common/widgets/texts/t_brand_title_vertical_icon.dart';
 import 'package:flutter_ecommerce/features/shop/screens/store/widget/category_tab.dart';
-import 'package:flutter_ecommerce/utils/contants/enums.dart';
-import 'package:flutter_ecommerce/utils/contants/image_string.dart';
 import 'package:flutter_ecommerce/utils/contants/size.dart';
 import 'package:flutter_ecommerce/utils/helpers/helper_function.dart';
-import '../../../../common/widgets/brands/brand-show_case.dart';
 import '../../../../common/widgets/brands/brand_card.dart';
-import '../../../../common/widgets/images/t_circular_image.dart';
 import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../utils/contants/colors.dart';
 
@@ -51,22 +45,22 @@ class StoreScreen extends StatelessWidget {
                         : TColors.white,
                     expandedHeight: 440,
                     flexibleSpace: Padding(
-                      padding: EdgeInsets.all(TSizes.spaceBtwItems),
+                      padding: const EdgeInsets.all(TSizes.spaceBtwItems),
                       child: ListView(
                         shrinkWrap: true,
-                        physics: NeverScrollableScrollPhysics(),
+                        physics: const NeverScrollableScrollPhysics(),
                         children: [
                           ///--SearchBar
-                          SizedBox(
+                          const SizedBox(
                             height: TSizes.defaultSpace,
                           ),
-                          TSearchContainer(
+                          const TSearchContainer(
                             text: "Search in Store",
                             showBorder: true,
                             showBackground: false,
                             padding: EdgeInsets.zero,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: TSizes.spaceBtwSections,
                           ),
 
@@ -76,7 +70,7 @@ class StoreScreen extends StatelessWidget {
                             showActionButton: true,
                             onPressed: () {},
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: TSizes.spaceBtwItems / 1.5,
                           ),
 
@@ -84,14 +78,14 @@ class StoreScreen extends StatelessWidget {
                               itemCount: 4,
                               mainAxisExtent: 80,
                               itemBuilder: (_, index) {
-                                return TBrandCard(showBorder: false,);
+                                return const TBrandCard(showBorder: false,);
                               })
                         ],
                       ),
                     ),
 
                     ///-- Tabs
-                    bottom: TTabBar(tabs: [
+                    bottom: const TTabBar(tabs: [
                       Tab(
                         child: Text("Sports"),
                       ),
@@ -112,7 +106,7 @@ class StoreScreen extends StatelessWidget {
             },
 
             /// --Body Section
-            body: TabBarView(children: [
+            body: const TabBarView(children: [
                   TCategoryTab(),
                   TCategoryTab(),
                   TCategoryTab(),

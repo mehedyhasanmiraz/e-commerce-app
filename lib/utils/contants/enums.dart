@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
 
 
 /// list of enums
 /// they can not be created inside a class
+library;
 
   enum TextSizes {small, medium, large}
   enum OrderStatus {processing, shipped, delivered}

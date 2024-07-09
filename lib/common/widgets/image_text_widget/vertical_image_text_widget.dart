@@ -15,7 +15,7 @@ class TVerticalImageText extends StatelessWidget {
     required this.image,
     required this.title,
     this.textColor = TColors.white,
-    this.backgroundColor = TColors.white,
+    this.backgroundColor,
     this.onTap,
   });
 
@@ -33,10 +33,10 @@ class TVerticalImageText extends StatelessWidget {
             Container(
                 height: 56,
                 width: 56,
-                padding: EdgeInsets.all(TSizes.sm),
+                padding: const EdgeInsets.all(TSizes.sm),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(100),
-                  color: backgroundColor?? (dark? TColors.white:TColors.black),
+                  color: backgroundColor?? (dark? TColors.black:TColors.white),
                 ),
                 child: Center(
                   child: Image(
@@ -48,7 +48,7 @@ class TVerticalImageText extends StatelessWidget {
                 )),
 
             /// --Text
-            SizedBox(
+            const SizedBox(
               height: TSizes.spaceBtwItems / 2,
             ),
             SizedBox(

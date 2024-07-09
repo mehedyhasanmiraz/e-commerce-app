@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 
 /// this image contains all the app images in strings formats
 class TImage{
@@ -44,15 +43,19 @@ class TImage{
   static const String promoBanner3 = "assets/images/banners/promo-banner3.png";
   static const String promoBanner4 = "assets/images/banners/promo-banner4.png";
 
+
+
+  static const String user = "assets/images/user/gold.jpg";
+
   ///-- products
-  static const String productImage1 = "assets/images/products/nikeshoe.png";
-  static const String productImage2 = "assets/images/products/t-shirt.png";
-  static const String productImage3 = "assets/images/products/product-jacket.png";
-  static const String productImage4 = "assets/images/products/product-jeans.png";
-  static const String productImage5 = "assets/images/products/product-shirt.png";
-  static const String productImage6 = "assets/images/products/product-slipper.png";
-  static const String productImage7 = "assets/images/products/NikeAirJordanBlackRed.png";
-  static const String productImage8 = "assets/images/products/NikeAirJordanOrange.png";
+  static const String productImage1 = "assets/images/products/nike-green-shoe2.png";
+  static const String productImage2 = "assets/images/products/nike-shoe1.png";
+  static const String productImage3 = "assets/images/products/nike-shoe2.png";
+  static const String productImage4 = "assets/images/products/t-shirt.png";
+  static const String productImage5 = "assets/images/products/t-shirt2.png";
+  static const String productImage6 = "assets/images/products/t_shirt.png";
+  static const String productImage7 = "assets/images/products/product-jacket.png";
+  static const String productImage8 = "assets/images/products/jacket2.png";
   static const String productImage9 = "assets/images/products/NikeAirJordanWhiteMagenta.png";
   static const String productImage10 = "assets/images/products/NikeAirJordanWhiteRed.png";
   static const String productImage11 = "assets/images/products/samsung_s9_mobile.png";

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/utils/contants/size.dart';
 import 'package:flutter_ecommerce/utils/helpers/helper_function.dart';
-import 'package:iconsax/iconsax.dart';
 
 import '../../../utils/contants/colors.dart';
 
