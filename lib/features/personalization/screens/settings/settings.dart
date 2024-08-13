@@ -4,6 +4,9 @@ import 'package:flutter_ecommerce/common/widgets/custom_shape/containers/primary
 import 'package:flutter_ecommerce/common/widgets/images/t_circular_image.dart';
 import 'package:flutter_ecommerce/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:flutter_ecommerce/common/widgets/texts/section_heading.dart';
+import 'package:flutter_ecommerce/features/personalization/screens/address/adress.dart';
+import 'package:flutter_ecommerce/features/shop/screens/cart/cart.dart';
+import 'package:flutter_ecommerce/features/shop/screens/order/order.dart';
 import 'package:flutter_ecommerce/utils/contants/size.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -58,21 +61,21 @@ class SettingsScreen extends StatelessWidget {
 
                   TSettingsMenuTile(
                     icon: (Iconsax.safe_home),
-                    title: "Home Address",
+                    title: "My Address",
                     subTitle: "Set Shopping delivery address",
-                    onTap: () {},
+                    onTap: () => Get.to(() => UserAddressScreen()),
                   ),
                   TSettingsMenuTile(
                     icon: (Iconsax.shopping_cart),
                     title: "My Cart",
                     subTitle: "Add, remove Product and move to checkout",
-                    onTap: () {},
+                      onTap: () => Get.to(() => CartScreen())
                   ),
                   TSettingsMenuTile(
                     icon: (Iconsax.bag_tick),
                     title: "My Orders",
                     subTitle: "In-progress and Complete orders",
-                    onTap: () {},
+                    onTap: () => Get.to(()=> OrderScreen()),
                   ),
                   TSettingsMenuTile(
                     icon: (Iconsax.bank),

@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/common/widgets/custom_shape/containers/primary_header_container.dart';
 import 'package:flutter_ecommerce/common/widgets/products/products_cards/products_cards_vertical.dart';
+import 'package:flutter_ecommerce/features/shop/screens/all_products/all_products.dart';
 import 'package:flutter_ecommerce/features/shop/screens/home/widget/home_appbar.dart';
 import 'package:flutter_ecommerce/features/shop/screens/home/widget/home_categories.dart';
 import 'package:flutter_ecommerce/features/shop/screens/home/widget/promo_slider.dart';
 import 'package:flutter_ecommerce/utils/contants/colors.dart';
 import 'package:flutter_ecommerce/utils/contants/image_string.dart';
 import 'package:flutter_ecommerce/utils/contants/size.dart';
+import 'package:get/get.dart';
 import '../../../../common/widgets/custom_shape/containers/search_container.dart';
 import '../../../../common/widgets/layout/grid_layout.dart';
 import '../../../../common/widgets/texts/section_heading.dart';
@@ -45,7 +47,7 @@ class HomeScreen extends StatelessWidget {
                     /// --Heading
                     TSectionHeading(
                       title: 'Popular Categories',
-                      onPressed: (){},
+                      onPressed: ()=> Get.to(() => AllProducts()),
                       showActionButton: false,
                       textColor: TColors.white,
                     ),
@@ -78,6 +80,10 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(
                     height: TSizes.spaceBtwItems,
                   ),
+
+                  /// -Heading
+                  TSectionHeading(title: "Popular Products", onPressed: () => Get.to(()=> AllProducts()),),
+                  SizedBox(height: TSizes.spaceBtwItems,),
 
                   /// --Popular Products
                   TGridLayout(itemCount: 4, itemBuilder: (BuildContext , int )=>const TProductCardsVertical(),),
