@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/common/styles/spacing_style.dart';
-import 'package:flutter_ecommerce/features/authentication/screens/login/wodget/form.dart';
+import 'package:flutter_ecommerce/features/authentication/screens/login/wodget/login_form.dart';
 import 'package:flutter_ecommerce/features/authentication/screens/login/wodget/login_header.dart';
 import 'package:flutter_ecommerce/utils/contants/size.dart';
 import 'package:flutter_ecommerce/utils/contants/text_strings.dart';
@@ -28,7 +28,7 @@ class LoginScreen extends StatelessWidget {
               TLoginHeader(dark: dark,),
 
               /// Form
-              const TForm(),
+               const TLoginForm(),
 
               /// Divider
               TFormDivider(dividerText: TTexts.orSignInWith.capitalize!,),

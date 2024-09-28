@@ -12,9 +12,9 @@ class TFormatter{
 
   static String formatPhoneNumber(String phoneNumber){
     // assuming 10 digit US phone number format (124) 456-7890
-    if(phoneNumber.length == 10){
+    if(phoneNumber.length == 11){
       return '(${phoneNumber.substring(0, 3)}) ${phoneNumber.substring(3, 6)} ${phoneNumber.substring(6)}';
-    }else if(phoneNumber.length ==11){
+    }else if(phoneNumber.length ==12){
       return '(${phoneNumber.substring(0, 4)}) ${phoneNumber.substring(4, 7)} ${phoneNumber.substring(7)}';
     }
     // add more custom phone number formatting logic for different format if needed.

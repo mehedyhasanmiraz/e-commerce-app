@@ -25,6 +25,25 @@ class TImage{
   static const String verifyIllustration = "assets/images/animation/.png";
 
 
+  /// -Lottie Animation
+  static const String cartAnimation = "assets/images/animation/.png";
+  static const String orderCompletedAnimation = "assets/images/animation/.png";
+  static const String packageAnimation = "assets/images/animation/.png";
+  static const String paperPlaneAnimation = "assets/images/animation/.png";
+  static const String carAnimation = "assets/images/animation/.png";
+  static const String pencilAnimation = "assets/images/animation/.png";
+  static const String docerAnimation = "assets/images/animation/successfully-registered.gif";
+  static const String searchAnimation = "assets/images/animation/.png";
+  static const String emptyAnimation = "assets/images/animation/.png";
+  static const String securityAnimation = "assets/images/animation/.png";
+  static const String successfullyRegisterAnimation = "assets/images/animation/successfully-registered.png";
+  static const String thankYouAnimation = "assets/images/animation/.png";
+  static const String paymentSuccessfulAnimation = "assets/images/animation/.png";
+  static const String loadingJuggleAnimation = "assets/images/animation/.png";
+  static const String cloudUploadingAnimation = "assets/images/animation/.png";
+  static const String loaderAnimation = "assets/images/animation/.png";
+
+
   /// --Category Icon
   static const String sportIcon = "assets/icons/categories/icon8-bowling.png";
   static const String clothIcon = "assets/icons/categories/icon8-cloth.png";
@@ -64,6 +83,7 @@ class TImage{
 
   /// -Profile
   static const String user = "assets/images/user/gold.jpg";
+
 
   ///-- products
   static const String productImage1 = "assets/images/products/nike-green-shoe2.png";

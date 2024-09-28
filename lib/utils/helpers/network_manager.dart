@@ -3,6 +3,7 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import '../popups/loader.dart';
+import 'package:connectivity_plus_platform_interface/src/enums.dart';
 
 
 /// Manage the network connectivity status and provides method to check and handle connectivity change
@@ -17,7 +18,7 @@ class NetworkManager extends GetxController {
   @override
   void onInit() {
     super.onInit();
-    _connectivitySubscription = _connectivity.onConnectivityChanged.listen(_updateConnectionStatus as void Function(List<ConnectivityResult> event)?) as StreamSubscription<ConnectivityResult>;
+    _connectivitySubscription = _connectivity.onConnectivityChanged.listen(_updateConnectionStatus) as StreamSubscription<ConnectivityResult>;
 
 
   }

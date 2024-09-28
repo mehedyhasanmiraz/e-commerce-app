@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/utils/contants/size.dart';
 import 'package:flutter_ecommerce/utils/contants/text_strings.dart';
-import 'package:flutter_ecommerce/utils/helpers/helper_function.dart';
+import 'package:lottie/lottie.dart';
 
 import '../../styles/spacing_style.dart';
 
@@ -20,7 +20,8 @@ class SuccessScreen extends StatelessWidget {
           child: Column(
             children: [
               /// Image
-              Image(image: AssetImage(image),width: THelperFunction.screenWidth(),),
+              // Image(image: AssetImage(image),width: THelperFunction.screenWidth(),),
+              Lottie.asset(image, width: MediaQuery.of(context).size.width *0.6),
 
 
               /// Title and subTitle

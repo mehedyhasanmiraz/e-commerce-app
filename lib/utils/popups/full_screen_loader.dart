@@ -3,6 +3,7 @@ import 'package:flutter_ecommerce/utils/helpers/helper_function.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
+import '../../common/widgets/loaders/animation_loader.dart';
 import '../contants/colors.dart';
 
 class TFullScreenLoader{
@@ -23,14 +24,22 @@ class TFullScreenLoader{
               color: THelperFunction.isDarkMode(Get.context!) ? TColors.dark: TColors.white,
               width: double.infinity,
               height: double.infinity,
-              child: Column(
-                children: [
-                  SizedBox(height: 250,),
-                  TAnimationLoaderWidget(text:text, animation: animation),
-                ],
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    SizedBox(height: 250,),
+                    TAnimationLoaderWidget(text:text, animation: animation, showAction: false,),
+                  ],
+                ),
               ),
             )
-        )
+        ),
     );
+  }
+
+  /// -Stop the currently open loading dialogue
+  /// This method doesn't return anything
+  static stopLoading(){
+    Navigator.of(Get.overlayContext!).pop(); // close the dialogue using navigator
   }
 }

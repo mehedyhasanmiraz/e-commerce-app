@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ecommerce/features/authentication/controllers/onboarding_controller.dart';
+import 'package:flutter_ecommerce/features/authentication/controllers/onboarding/onboarding_controller.dart';
 import 'package:flutter_ecommerce/features/authentication/screens/onboarding/widget/onboarding_next_button.dart';
 import 'package:flutter_ecommerce/features/authentication/screens/onboarding/widget/onboarding_page.dart';
 import 'package:flutter_ecommerce/features/authentication/screens/onboarding/widget/onboarding_skip.dart';

@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "360438673424",
+    "project_id": "my-test-app-18dcc",
+    "storage_bucket": "my-test-app-18dcc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360438673424:android:76347a86a415043cdb5a95",
+        "android_client_info": {
+          "package_name": "com.abc.myapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnj-opQpgVDnKXIz11EMHaIrolu7uxu6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360438673424:android:31ad553c8a2852b8db5a95",
+        "android_client_info": {
+          "package_name": "com.example.recipi_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnj-opQpgVDnKXIz11EMHaIrolu7uxu6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360438673424:android:8bb15fb6cfa18ee6db5a95",
+        "android_client_info": {
+          "package_name": "com.jousoft.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnj-opQpgVDnKXIz11EMHaIrolu7uxu6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

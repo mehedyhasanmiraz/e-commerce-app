@@ -1,16 +1,29 @@
 
 class TValidator{
-  static String? validateEmail(String? value){
-    if(value == null || value.isEmpty){
-      return "Email is Required";
+
+  /// -Empty Text validation
+  static String? emptyTextValidate(String? fieldName,String? value){
+    if(value == null|| value.isEmpty){
+      return "$fieldName is required";
     }
 
-    // regular expression or email validation
-    final emailRegExp = RegExp(r'^[\w-.\]+@([\w-]+\.)+[\w-]{2,4}$');
+    return null;
+  }
 
-    if(!emailRegExp.hasMatch(value)){
-      return "Invalid Email address";
+
+  static String? validateEmail(String? value) {
+    if (value == null || value.isEmpty) {
+      return "Email is required";
     }
+
+    // Regular expression for email validation
+    final emailRegExp = RegExp(
+        r'^[\w\-]+@[a-zA-Z\d\-]+\.[a-zA-Z]{2,}$');
+
+    if (!emailRegExp.hasMatch(value)) {
+      return "Invalid email address";
+    }
+
     return null;
   }
 
@@ -47,10 +60,10 @@ class TValidator{
     }
 
     // regular expression for phone number validation(assuming a 10 digit us phone number)
-    final phoneRegExp = RegExp(r'^\d{10}$');
+    final phoneRegExp = RegExp(r'^\d{11}$');
 
     if(!phoneRegExp.hasMatch(value)){
-      return "Invalid phone number format (10 digit required)";
+      return "Invalid phone number format (11 digit required)";
     }
     return null;
   }
